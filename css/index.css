@@ -1,0 +1,214 @@
+
+body::-webkit-scrollbar {
+    width: 5px;
+  }
+body::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+}
+body::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    height: 100vh;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html { background-color: black; }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nullearth {
+    position: relative;
+    display: flex;
+    height: 40%;
+    z-index: 5;
+}
+
+.nullearth-area {
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    pointer-events: none;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    font-size: 18px;
+    letter-spacing: -2px;
+    color:yellow;
+    font-weight: bold;
+    background-color: black;
+    padding: 12px 5px 12px 5px;
+    width: 140px;
+    margin-bottom: 5px;
+    border-radius: 20%;
+}
+.nullearth .info{
+    bottom: 10px;
+}
+.info .time, .txt {
+    color: gray;
+    font-weight: lighter;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.map .info {
+    left: 0px;
+    top: 2px;
+}
+
+.charts{
+	width: 100%;
+	display: flex;
+}
+
+.information {
+    display: flex;
+    overflow: hidden;
+    height: 60%;
+    
+}
+
+.graph { width: 100%;}
+
+.map {
+    background-color: #141414;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: 3;
+    width: 40%;
+}
+g{
+    z-index:4
+}
+.map .detail {
+    position: absolute;
+    z-index: 10;
+    color: gray;
+    right: 0;
+    top: 0;
+    width: 180px;
+    font-size: 18px;
+    padding: 10px;
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+.detail .item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.square {
+    width: 18px;
+    height: 18px;
+    border: 1px solid white;
+    margin-right: 8px;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.red {
+    background-color: crimson;
+}
+
+.green {
+    background-color: green;
+}
+
+.object {
+    overflow: auto;
+    position: relative;
+    z-index: 1;
+}
+
+object, canvas, svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.graph-item{
+    background-color: #141414;
+    color: black;
+    width: 100%;
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.radio {
+    border: 1px solid white;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.hidden {
+    display: none;
+}

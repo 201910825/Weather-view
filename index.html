@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.41.1/apexcharts.min.js" integrity="sha512-Gpg0M5UOTFSHGglemXUOUzL1LyO8MT0fxmEAjGN8jNlY6oSOsLerF1/vuXrqJXKyV5QIay12trwDDhmRJHZisA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.41.1/apexcharts.min.css" integrity="sha512-nnNXPeQKvNOEUd+TrFbofWwHT0ezcZiFU5E/Lv2+JlZCQwQ/ACM33FxPoQ6ZEFNnERrTho8lF0MCEH9DBZ/wWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+    </head>
+    <body>
+        <div class="nullearth">
+            <div class="nullearth-area">
+                <div class="info">
+                    <span class="time">. . .</span>
+                    <h2>태풍</h2> 
+                </div>  
+                <iframe 
+                    src="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-232.18,36.18,2128"
+                    frameborder="0"  
+                    width="100%" 
+                    height="100%"></iframe>  
+            </div>
+            <div class="nullearth-area">
+                <div class="info">
+                    <span class="time">. . .</span>
+                    <h2>미세먼지</h2>
+                </div> 
+                <iframe 
+                    src="https://earth.nullschool.net/#current/particulates/surface/currents/level/overlay=pm10/orthographic=-232.18,36.18,2128"
+                    frameborder="0" 
+                    width="100%" 
+                    height="100%"></iframe>
+            </div>
+            <div class="nullearth-area">
+                <div class="info">
+                    <span class="time">. . .</span>
+                    <h2>초 미세먼지</h2>
+                </div> 
+                <iframe 
+                    src="https://earth.nullschool.net/#current/particulates/surface/currents/level/overlay=pm2.5/orthographic=-232.18,36.18,2128"
+                    frameborder="0" 
+                    width="100%" 
+                    height="100%"></iframe>
+            </div>
+        </div>
+        <div class="information">  
+            <div class="graph" id="graphs">
+                <div class="graph-item"></div>
+            </div>
+            <div class="map">
+                <div class="info">
+                    <div>
+                        <p class="txt">마지막 업데이트</p>
+                        <p class="time">. . .</p>
+                    </div>
+                    <h2 id="degree">지역별 온도</h2>
+                </div> 
+                <object 
+                    data="./res/map.svg" 
+                    type="image/svg+xml" class="object" 
+                    id="svgMap" style="width: 100%; height:100%;">
+                </object>
+                <div class="detail">
+                    <div class="toggle">
+                        <input type="radio" class="radio" id="temp" checked />
+                        <label for="temp">온도</label>
+                        <input type="radio" class="radio" id="rain" />
+                        <label for="rain">날씨</label>
+                    </div>
+                    <div class="temp-info" id="temp-info">
+                        <div class="item">
+                            <div class="square green"></div>
+                            <span>정상</span>
+                        </div>
+                        <div class="item">
+                            <div class="square orange"></div>
+                            <span>33도</span>
+                        </div>
+                        <div class="item">
+                            <div class="square red"></div>
+                            <span>35도 이상</span>
+                        </div>
+                    </div>
+                    <div class="rain-info" id="rain-info">
+                        <div class="item">
+                            <div class="square green"></div>
+                            <span>정상</span>
+                        </div>
+                        <div class="item">
+                            <div class="square blue"></div>
+                            <span>비 내림</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html> 
